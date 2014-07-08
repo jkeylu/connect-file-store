@@ -21,7 +21,7 @@ See example/app.js
 With express:
 
     var connect = require('connect')
-      , FileStore = require('connect-session-file')(connect);
+      , FileStore = require('connect-file-store')(connect);
 
     app.use(express.session({
       secret: settings.cookie_secret,
